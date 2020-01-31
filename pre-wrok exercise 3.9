@@ -1,0 +1,70 @@
+students = {"1957441":{"name":"1957441",\
+                        "grade":{"EBF":70,\
+                       "EECS":66,\
+                       "BDAV":68}},\
+            "1957442":{"name":"1957442",\
+                       "grade":{"EBF":62,\
+                       "EECS":64,\
+                       "BDAV":44}},\
+            "1957443":{"name":"1957443",\
+                       "grade":{"EBF":58,\
+                       "EECS":62,\
+                       "BDAV":68}},\
+            "1957444":{"name":"1957444",\
+                       "grade":{"EBF":48,\
+                       "EECS":74,\
+                       "BDAV":54}},\
+                            }
+students
+
+#Question1
+
+for s_id in students :
+    print(students[s_id]["name"])
+   
+    if students[s_id]["grade"]["EBF"] > 69 :
+        print("EBF  grade is " + str(students[s_id]["grade"]["EBF"]) + " distinction")
+    elif 70 > students[s_id]["grade"]["EBF"] > 59 :
+        print("EBF  grade is " + str(students[s_id]["grade"]["EBF"]) + " Merit")
+    elif 60 > students[s_id]["grade"]["EBF"] > 49 :
+        print("EBF  grade is " + str(students[s_id]["grade"]["EBF"]) + " pass")
+    else :
+        print("EBF  grade is " + str(students[s_id]["grade"]["EBF"]) + " fail")
+
+    if students[s_id]["grade"]["EECS"] > 69 :
+        print("EECS grade is " + str(students[s_id]["grade"]["EECS"]) + " distinction")
+    elif 70 > students[s_id]["grade"]["EECS"] > 59 :
+        print("EECS grade is " + str(students[s_id]["grade"]["EECS"]) + " Merit")
+    elif 60 > students[s_id]["grade"]["EECS"] > 49 :
+        print("EECS grade is " + str(students[s_id]["grade"]["EECS"]) + " pass")
+    else :
+        print("EECS grade is " + str(students[s_id]["grade"]["EECS"]) + " fail")
+        
+    if students[s_id]["grade"]["BDAV"] > 69 :
+        print("BDAV grade is " + str(students[s_id]["grade"]["BDAV"]) + " distinction")
+    elif 70 > students[s_id]["grade"]["BDAV"] > 59 :
+        print("BDAV grade is " + str(students[s_id]["grade"]["BDAV"]) + " Merit")
+    elif 60 > students[s_id]["grade"]["BDAV"] > 49 :
+        print("BDAV grade is " + str(students[s_id]["grade"]["BDAV"]) + " pass")
+    else :
+        print("BDAV grade is " + str(students[s_id]["grade"]["BDAV"]) + " fail")
+    print("\n")
+
+#Question2
+
+a = (students["1957441"]["grade"]["EBF"]+students["1957441"]["grade"]["EECS"]+students["1957441"]["grade"]["BDAV"])/3
+b = (students["1957442"]["grade"]["EBF"]+students["1957442"]["grade"]["EECS"]+students["1957442"]["grade"]["BDAV"])/3
+c = (students["1957443"]["grade"]["EBF"]+students["1957443"]["grade"]["EECS"]+students["1957443"]["grade"]["BDAV"])/3
+d = (students["1957444"]["grade"]["EBF"]+students["1957444"]["grade"]["EECS"]+students["1957444"]["grade"]["BDAV"])/3
+a=int(a)
+b=int(round(b,0))
+c=int(round(c,0))
+d=int(round(d,0))
+grade_list = [a,b,c,d]
+grade_list.sort(reverse = True)
+print(grade_list)
+grade_list[0:1]
+
+#Question3
+
+#Question4
