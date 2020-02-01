@@ -58,14 +58,16 @@ a = (students["1957441"]["grade"]["EBF"]+students["1957441"]["grade"]["EECS"]+st
 b = (students["1957442"]["grade"]["EBF"]+students["1957442"]["grade"]["EECS"]+students["1957442"]["grade"]["BDAV"])/3
 c = (students["1957443"]["grade"]["EBF"]+students["1957443"]["grade"]["EECS"]+students["1957443"]["grade"]["BDAV"])/3
 d = (students["1957444"]["grade"]["EBF"]+students["1957444"]["grade"]["EECS"]+students["1957444"]["grade"]["BDAV"])/3
-a=int(a)
-b=int(round(b,0))
-c=int(round(c,0))
-d=int(round(d,0))
-grade_list = [a,b,c,d]
-grade_list.sort(reverse = True)
-print(grade_list)
-grade_list[0:1]
+if a>b and a>c and a>d :
+    print("1957441 is the highest score in class")
+elif b>a and b>c and b>d:
+    print("1957442 is the highest score in class")
+elif c>a and c>b and c>d: 
+    print("1957443 is the highest score in class")
+elif d>a and d>b and d>c:
+    print("1957444 is the highest score in class")
+else   :  
+    print("No one get the highest in class")
 
 #Question3
 
